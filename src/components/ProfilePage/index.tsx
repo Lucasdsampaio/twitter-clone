@@ -1,15 +1,16 @@
 import React from 'react'
-import './styles'
+import { Container, Banner, Avatar, ProfileData, LocationIcon, CakeIcon, Followage, EditButton } from './styles'
+import Feed from '../Feed'
 
 const ProfilePage = () => {
     return (
         <Container>
-            <Bannner>
+            <Banner>
                 <Avatar />
-            </Bannner>
+            </Banner>
             
             <ProfileData>
-                <EditButton outlined>Editar perfil</EditButton>
+                <EditButton outline >Editar perfil</EditButton>
 
                 <h1>Lucas Sampaio</h1>
                 <h2>@lucas_sampaio  </h2>
@@ -20,15 +21,26 @@ const ProfilePage = () => {
 
                 <ul>
                     <li>
-                        <Location />
+                        <LocationIcon />
                         São Paulo, Brasil
                     </li>
                     <li>
-                        <Cake />
+                        <CakeIcon />
                         Nascido(a) em 01 de janeiro de 1900
                     </li>
                 </ul>
+
+                <Followage>
+                    <span>
+                        seguindo <strong>0 </strong>
+                    </span>
+                    <span>
+                        <strong>0 </strong> seguidores
+                    </span>
+                </Followage>
             </ProfileData>
+
+            <Feed/>
         </Container>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfilePage from '../ProfilePage'
-import { Container, Header, BackIcon, ProfileInfo, ProfilePage, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles'
+import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles'
 
 const Main = () => {
     return (
@@ -11,12 +11,12 @@ const Main = () => {
               </button>  
 
               <ProfileInfo>
-                  <span>Lucas Sampaio</span>
+                  <strong>Lucas Sampaio</strong>
                   <span>0 Tweets</span>
               </ProfileInfo>
             </Header>
 
-            {/* <ProfilePage/> */}
+            <ProfilePage/>
             <BottomMenu>
                 <HomeIcon className="active" />
                 <SearchIcon/>

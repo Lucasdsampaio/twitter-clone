@@ -4,7 +4,7 @@ import { ArrowLeft, Home, Search, Notifications, Email } from '../../style/Icons
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-  
+    
     width: min(601px, 100%);
 
     @media (min-width: 500px) {
@@ -16,27 +16,26 @@ export const Header = styled.div`
     z-index: 2;
     position: sticky;
     top: 0;
-    color: var(--primary);
-
+    background: var(--primary);
+    
     display: flex;
     align-items: center;
-
+    
     text-align: left;
-
-    padding: 8px 0px 9px 13px;
+    
+    padding: 8px 0 9px 13px;
     border-bottom: 1px solid var(--outline);
-
-
+    
     > button {
-        padding: 8px;
-        border-radius: 50%;
-
-        outline: 0;
-        cursor: pointer;
-
-        &:hover {
-            background: var(--twitter-dark-hover);
-        }
+      padding: 8px;
+      border-radius: 50%;
+    
+      outline: 0;
+      cursor: pointer;
+    
+      &:hover {
+        background: var(--twitter-dark-hover);
+      }
     }
 `
 export const BackIcon = styled(ArrowLeft)`
@@ -58,7 +57,6 @@ export const ProfileInfo = styled.div`
         font-size: 15px;
         color: var(--gray);
     }
-
 `
 
 export const BottomMenu = styled.div`

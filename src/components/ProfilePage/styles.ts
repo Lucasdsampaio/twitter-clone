@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import Button from '../Button'
-import { LocationOn, Cake} from '../../style/Icons'
+import { LocationOn, Cake} from '../../styles/Icons'
 
 
 export const Container = styled.div`

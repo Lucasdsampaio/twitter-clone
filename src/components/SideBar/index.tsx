@@ -1,6 +1,9 @@
 import React from 'react'
+import StickBox from 'react-sticky-box'
 import { Container, SearchWrapper, SearchInput, SeachIcon, Body } from './styles'
-
+import List from '../List'
+import FollowSugestion from '../FollowSugestion'
+import News from '../News'
 
 const SideBar = () =>  {
     return (
@@ -10,9 +13,51 @@ const SideBar = () =>  {
                 <SeachIcon/>
             </SearchWrapper>
 
+            <StickBox>
             <Body>
-                <p>{'Lorem ipsum dolor sis amet. '.repeat(90)}</p>
+                <List 
+                    title="Talvez voçê curta"
+                    elements={[
+                        <FollowSugestion 
+                            name="Luiz"
+                            nickname="@luiz"
+                        />,
+                        <FollowSugestion 
+                        name="Fernando"
+                        nickname="@fernando"
+                        />,
+                        <FollowSugestion 
+                            name="maria"
+                            nickname="@maria"
+                        />
+                    ]}
+                />
+                <List 
+                    title="Talvez voçê curta"
+                    elements={[
+                        <News />,
+                        <News />,
+                        <News />
+                    ]}
+                />
+                <List 
+                    title="Talvez voçê curta"
+                    elements={[
+                        <News />,
+                        <News />,
+                        <News />
+                    ]}
+                />
+                <List 
+                    title="Talvez voçê curta"
+                    elements={[
+                        <News />,
+                        <News />,
+                        <News />
+                    ]}
+                />
             </Body>
+            </StickBox>
         </Container>
     )
 }

@@ -17,6 +17,7 @@ export const Container = styled.div`
 
         max-height: 100vh;
         overflow-y: scroll;
+        overflow: hidden;
     }
 `
 
